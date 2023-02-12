@@ -1,7 +1,6 @@
-.vs/*
+.vs
 obj
 bin
-
 
 # Logs
 logs
