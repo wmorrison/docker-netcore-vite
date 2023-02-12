@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/app/src:rw
+    # environment:
+    #   - VITE_APP_TITLE=Dockerize Vite + React + TS
+    env_file:
+      - ./.env
+    
