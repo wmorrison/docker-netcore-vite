@@ -10,8 +10,10 @@ services:
   frontend:
     build:
       context: frontend
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend/src:/app/src:rw
     ports:
-      - "8080:80"
+      - "8080:5173"
     env_file:
-      - ./frontend/.env.production
+      - ./frontend/.env
