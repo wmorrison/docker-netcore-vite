@@ -1,5 +1,6 @@
-backend/obj
-backend/bin
+.vs/*
+obj
+bin
 
 
 # Logs
@@ -23,6 +24,4 @@ dist-ssr
 .DS_Store
 *.suo
 *.ntvs*
-*.njsproj
-*.sln
 *.sw?
